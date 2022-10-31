@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--절대경로 -->
+    <h1>절대경로</h1>
+    <img src="C:\work\HTML5 ,CSS3\jjang.jpg" alt="짱구"/> <!-- alt 하면 읽어줌-->
+    
+    <br><br>
+    
+    <!-- 상대경로 -->
+    <h1>상대경로</h1>
+    <!-- 하위-->
+    <img src="images/jjang.jpg" height ="150" width ="150" alt ="짱구"/>
+    <!--상위-->
+    <img src= "./jjang.jpg" height ="200" width="200" alt="짱구"/>
+
+    <br>
+    <!-- url사용 -->
+    <h1>url 사용하기</h1>
+    <img src ="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEwMTJfMTQ3%2FMDAxNjY1NTc2NjM3OTgx.0kpbSr5CeQa4hqI2gq5WGQ1gPvKdohQYrsqq5vk7lSkg.wJDMFvWtd_CdWy5-zI3TuA4nXIvzDXHAdEChZbUgiEQg.JPEG.bahna2%2FIMG_7982.jpg&type=sc960_832"/>
+    
+    <br>
+    <!-- 하이퍼링크 -->
+    <!-- <a href = "파일위치(상대,절대),url">화면에 나타나는 부분</a> -->
+   
+    <a href = "third.html" > 이번주 로또 1등당첨 번호 </a>
+    <br>
+    
+    <a href = "third.html" target="_self"> 이번주 로또 1등당첨 번호 </a>       <!-- self는 기본값이라 생략가능, 현재 사용창에 열림-->
+    <br>
+    
+    <a href = "third.html" target="_blank"> 이번주 로또 2등당첨 번호 </a>       <!-- 새로운창으로 열림-->
+    <br>
+
+    <a href = "http://www.naver.com" ><img src= "C:\work\HTML5 ,CSS3\naver.jpg"></a>
+
+    <!-- 한 페이지 내에서 문서 이동-->
+
+    <a href = "#content1">한줄평</a>
+    <a href = "#content2">반품환불</a>
+    <a href = "#content3">도서정보</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <a id = "content1">한줄평 위치</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a id = "content2">반품환불 위치</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a id = "content3">도서정보 위치</a>
+
+
+    <a href="#top"><h1>맨위로</h1></a>
+    
+
+</body>
+</html>
