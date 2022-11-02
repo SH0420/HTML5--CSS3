@@ -12,12 +12,12 @@
         /* 웹 폰트 */
         
         
-        @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Noto+Sans+Vai&display=swap');
+        /* @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Noto+Sans+Vai&display=swap');
 
             .fontstyle{
                 font-family: 'Fasthand', cursive;
                 
-        }
+        } */
         
         /* 글자크기 */
         /* 절대 크기 : px,pt */
@@ -34,31 +34,138 @@
             font-family: 돋움;
         } */
 
-        p {color: red;}
+        /* p {color: red;}
 
-        p{text-decoration: overline;} /* none은 밑줄 삭제, overline은 위에 밑줄, unerline은 밑줄, line-through은 글자중앙에 줄그어짐*/
+        p{text-decoration: none;} none은 밑줄 삭제, overline은 위에 밑줄, unerline은 밑줄, line-through은 글자중앙에 줄그어짐 */
     
         /* 글자에 그림자 효과        */
         /* text-shadow : 가로거리 세로거리 번짐 그림자색깔 */
 
-        .shadow1 {
+        /* .shadow1 {
             text-shadow : 1px 1px ;
               color :orange;
-        }
-        .shadow2{
+        } */
+        /* .shadow2{
             text-shadow : 5px 5px 3px red;
-        }
+        } */
 
         /* 글자간격 */
-         .letter { letter-spacing: 0.5em;} /* 1em당16px */
+         /* .letter { letter-spacing: 0.5em;} 1em당16px */
+
+        /* p {
+            width: 150px;
+            background-color:yellow ;
+        } */
+
+        /* 공백과 줄바꿈 속성 */
+        /* white-space : normal | nowrap | pre | pre-wrap | pre-line */
+        /* .normal {white-space: normal;}
+        .nowrap {white-space: nowrap;}
+        .pre {white-space: pre;}   
+        .prewrap{white-space: prewrap;}
+        .pre-line{white-space: pre-line;} */
+
+        /* p {
+            border: 1px solid red;
+        } */
+        /* 텍스트정렬 : 수평정렬 */
+        /* text-align : left | right | center | justify
+
+        .left{text-align:left}
+        .right{text-align:right}
+        .center{text-align:center}
+        .justify{text-align:justify} */
+
+        /* 줄(행)간격 */
+        .line { line-height: 2em;}
+
+        /* .box{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            text-align: center;
+            line-height: 200px;
+        } */
+
+        /* 글자가 넘치는 기능제어 */
+        /* overflow  */
+        p{
+            border: 1px solid red;
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow : ellipsis;
+            /* 생략기능을 쓰려면 white-space,overflow,text-overflow를 함께 사용해야한다 */
+        }
+
+        p:hover{
+            overflow: visible;
+            /* 생략한부분을 보여주는기능 */
+        }
     </style>
 </head>
 <body>
+
     <!-- CSS의 속성 -->
-    <p>브라우저 기본 글꼴</p>
+    <p>전자 회로를 이용한 고속의 자동 계산기. 숫자 계산, 자동 제어, 데이터 처리, 사무 관리, 언어나 영상 정보 처리 따위에 광범위하게 이용된다.</p>
+    
+    <!-- <p >
+        Match report as Tottenham secure Group D top spot and seeded status for the Champions League last-16 draw next week; 
+        goals from Clement Lenglet and Pierre-Emile Hojbjerg cancel out Chancel Mbemba's headed opener; 
+        Spurs finish top of group for third time in Champions League history
+
+    </p>
+    <p class ="line">
+        Match report as Tottenham secure Group D top spot and seeded status for the Champions League last-16 draw next week; 
+        goals from Clement Lenglet and Pierre-Emile Hojbjerg cancel out Chancel Mbemba's headed opener; 
+        Spurs finish top of group for third time in Champions League history
+
+    </p>
+
+    <p class = "box">
+        가운데정렬(수직)
+    </p> -->
+
+
+
+    <!-- <p class="left">
+        Match report as Tottenham secure Group D top spot and seeded status for the Champions League last-16 draw next week; 
+        goals from Clement Lenglet and Pierre-Emile Hojbjerg cancel out Chancel Mbemba's headed opener; 
+        Spurs finish top of group for third time in Champions League history
+
+    </p>
+    <p class ="right">
+        Match report as Tottenham secure Group D top spot and seeded status for the Champions League last-16 draw next week; 
+        goals from Clement Lenglet and Pierre-Emile Hojbjerg cancel out Chancel Mbemba's headed opener; 
+        Spurs finish top of group for third time in Champions League history
+
+    </p>
+
+    <p class = "center">
+        Match report as Tottenham secure Group D top spot and seeded status for the Champions League last-16 draw next week; 
+        goals from Clement Lenglet and Pierre-Emile Hojbjerg cancel out Chancel Mbemba's headed opener; 
+        Spurs finish top of group for third time in Champions League history
+
+    </p>
+
+    <p class = "justify">
+        Match report as Tottenham secure Group D top spot and seeded status for the Champions League last-16 draw next week; 
+        goals from Clement Lenglet and Pierre-Emile Hojbjerg cancel out Chancel Mbemba's headed opener; 
+        Spurs finish top of group for third time in Champions League history
+
+    </p> -->
+
+     <!-- <p>브라우저 기본 글꼴</p>
     <p class="fontstyle">글꼴을 적용한 상태style</p>
     <h1 class="shadow1">HTML5</h1>
     <h1 class="shadow2">HTML5</h1>
-    <h1 class="letter">HTML5</h1>
+    <h1 class="letter">HTML5</h1> 
+    --> 
+    
+    <!-- <p class="normal">요소의 공백문자 를 어 떻게처리할 지를 정의합니다.</p>
+    <p class="nowrap">요소의 공백문자 를 어 떻게처리할 지를 정의합니다.</p>
+    <p class="pre">요소     의 공 백 문 자 를 어 떻게 처리 할 지를 정의합니다.</p>
+    <p class="prewrap">요소                의 공백문자 를 어 떻게처리할 지를 정의합니다.</p>
+    <p class="pre-line">요소  의 공백문자 를 어 떻게처리할 지를 정     의합니다.</p> -->
 </body>
 </html>
