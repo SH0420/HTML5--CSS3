@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* position : static(기본값) | relative(현재자신의위치가 기준점,상대적인기준점) | absoulte(0.0이 기준점,절대적인기준점) | fixed (스크롤을해도 자리변동x) */
+        /* 위치 이동시켜주는 top,left,right,bottom */
+        /* .box1{
+            position:absolute;
+            top: 20px;
+            left: 20px;
+            float: left;
+            width: 100px;
+            background-color: rgb(132, 71, 212);
+            margin-right: 10px;
+            padding: 20px; 
+        } */
+            /* width가 100%면 딸려오지못한다 */
+        /* .box2{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            float: left;
+            width: 300px;
+            background-color: skyblue;
+            padding: 20px;
+        } */
+
+        /* .wrap{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+        }
+
+        .box{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(174, 86, 86);
+        }
+
+        #card1{
+            top: 0px;
+            left: 0px;
+        }
+
+        #card2{
+            top: 0px;
+            right: 0px;
+        }
+
+        #card3{
+            bottom: 0px;
+            left: 0px;
+        }
+
+        #card4{
+            bottom: 0px;
+            right: 0px;
+        }
+
+        #card5{
+          top: 125px;
+          right: 125px;
+        }
+
+        #card{
+            position: fixed;
+            top: 5px;
+            right: 5px;
+        } */
+
+        /* 요소를 화면에 보이기/숨기기 속성  */
+        /* visibility : hidden | visible */
+        /* 요소의 영역은 그대로 보전한다. */
+       
+        /* display : none | block */
+        /* 요소의 영역은 보전하지 않는다. */
+       
+        /* .invisible{
+             visibility: hidden; 
+            display: none;  
+        } */
+
+        img{
+            position:absolute;
+        }
+
+        .img0{
+            top: 0px;
+            left: 0px;
+            z-index: 10;
+        }
+        /* z-index쓰면 가장위에올라옴, 쓸때px붙이지 않음*/
+
+        .img1{
+            top: 30px;
+            left: 30px;
+           
+        }
+
+        .img2{
+            top: 60px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box1">박스1</div>
+    <div class="box2">박스2</div> -->
+
+    <!-- <div class="wrap">
+        <div class="box" id="card1"></div>
+        <div class="box" id="card2"></div>
+        <div class="box" id="card3"></div>
+        <div class="box" id="card4"></div>
+        <div class="box" id="card5"></div>
+
+    </div>
+    <div class="box"id="card6"></div>
+    <p>식육목 고양이과의 포유류. 생물종 분류로는 고양이과에 속하며 사자, 표범, 재규어와 근연속(Panthera)이다. 검은 가로줄무늬가 특징적인데, 생후부터 성장 후에도 남아 있다.</p> -->
+    
+    <img class="img0" src="images/pic1.jpg">
+    <img class="img1" src="images/pic2.jpg">
+    <img class="img2" src="images/pic3.jpg">
+
+
+
+</body>
+</html>
