@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1104일*/
+        
+        /* 선택자  */
+        /* 1.전체선택자
+        2.태그선택자
+        3.클래스선택자
+        4.아이디선택자 
+        5.그룹선택자*/
+
+        /* 1번 */
+      /*  * { }
+          p { }
+          .color { }
+          #textsize{ }
+          h1, p { } --> ,가 있으면 묶여있는 대상은 같은 효과를받는다 */
+  
+
+        /* 후손선택자 */
+        /* section ul {
+            border: 1px solid red;
+        } */
+
+        /* 자식선택자 */
+        /* section > p {
+            color: rgb(0, 60, 255);
+        } */
+
+        /* 형제선택자 */
+        /* +는 바로 아래 동생 */
+        /* p + ul {
+            background-color: yellowgreen;
+        } */
+
+        /* ~은 동생들 */
+        /* p ~ ul {
+            color: red;
+        } */
+
+        /* 속성 선택자 */
+        /* a[href] {
+            background-color: yellow;
+        } */
+        /* a[target="_blank"]{
+            background-color: red; 
+        } */
+
+        /* 2번 */
+        /* a {
+            text-decoration: none;
+        } */
+        /* a태그 */
+        /* 가상선택자 */
+        /* 1.link
+           2.visited 1번이상 방문했을때 변화
+           3.hover 마우스를 올려놨을때 밑에 밑줄감
+           4.active 마우스로 눌렀을 때*/
+
+           /* a:link {
+            text-decoration: none;
+           }
+
+           a:hover {
+            text-decoration: underline;
+            color: red;
+           }
+
+           a:active{
+            color:chartreuse;
+           }
+           
+           a:visited {
+            color: orange;
+           } */
+
+           /* 3번 */
+
+           /* 상태선택자 */
+           /* input:checked + span{
+            color: orange;
+           } */
+           
+           /* 4번 */
+           /* 구조선택자 */
+           /* ul li {
+            float: left;
+            border: 1px solid #000;
+            list-style-type: none;
+            width: 50px;
+            text-align: center;
+            padding: 20px;
+           }
+
+           li:nth-child(2n+1){
+            background-color: red;
+           }
+
+           li:nth-child(2n){
+            background-color: blue;
+           }
+
+           li:first-child{
+           border-radius: 20px 0 0 20px;
+           }
+
+           li:last-child{
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+           } */
+
+           /* nth-child()는 위치값에 색을 적용시킨다 2n+1은 홀수 2n은 짝수 */
+  
+           /* p:hover {
+            color: orchid;
+           }
+
+           ul:hover {
+            color: pink;
+           } */
+
+           /* 5번 */
+           /* .top-img:hover {
+            width: 270;
+           } */
+         </style>  
+    </head>
+<body>
+    <!-- 1번 -->
+    <section id="container">
+        <p>1번p</p>
+        <ul>
+            <li>직접통화</li>
+            <li>문자보내기</li>
+            <li>
+                <p>2번p</p>
+                <ul>
+                    <li>1인</li>
+                    <li>2인</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="#" target="_blank">HTML</a></li>
+            <li><a href="#">JAVA</a></li>
+        </ul>
+    </section>
+
+    <!-- 2번 -->
+    <!-- <a href="http://www.naver.com">네이버</a>
+    <br>
+    <a href="http://www.daum.net">다음</a>
+    <br>
+    <a href="http://google.com">구글</a>
+    <br> -->
+
+    <!-- 3번 -->
+    <!-- <input type="radio" name="hobby"><span>운동</span>
+    <input type="radio" name="hobby"><span>독서</span> -->
+
+    <!-- 4번 -->
+        <!-- <p>마우스가 올라옵니다.</p>
+    <ul>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+    </ul> -->
+    <br>
+
+    <!-- 5번 -->
+    <!-- <div class="top-img"><img src="images/jjang.jpg" ></div>
+    <div class="top-img"><img src="images/jjang.jpg" ></div> -->
+
+</body>
+</html>
